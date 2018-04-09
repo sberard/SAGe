@@ -88,7 +88,7 @@ for file_name in genome_files:
             dir2 = line_i1[2]
             if not all_genes[species].has_key(gene1) or not all_genes[species].has_key(gene2):
                 print "BUG BUG BUG",gene1,gene2,all_genes[species].keys()
-            adjacencies.write(species+" "+gene1+" "+gene2+" "+dir1+" "+dir2+" 1.0\n")
+            adjacencies.write(gene1+" "+gene2+" "+dir1+" "+dir2+" 1.0\n")
             i = i + 1
 
 parameter_file.write("char.sep=@                            \n")
@@ -98,7 +98,7 @@ parameter_file.write("output.prefix=simulyon                \n")
 parameter_file.write("\n")
 parameter_file.write("verbose=1                             \n")
 parameter_file.write("\n")
-parameter_file.write("with.transfer=0                       \n")
+parameter_file.write("with.transfer=1                       \n")
 parameter_file.write("dated.species.tree=0                  \n")
 parameter_file.write("ale=0                                 \n")
 parameter_file.write("already.reconciled=0                  \n")

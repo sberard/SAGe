@@ -220,18 +220,17 @@ def getLeaves(tree,a):
 def writeTree(tree,a,NHX):
 #    print a,tree[a]
     if isLeaf(tree,a):
-        if isRoot(tree,a):
-            chaine = "("
-        else:
-            chaine = ""
+        chaine = ""
+        #if isRoot(tree,a):
+            #chaine = chaine + "("
 	chaine = chaine + tree[a][0]
 	if tree[a][3] != -1:
 		#~ print tree[a][3]
 		chaine = chaine + ":" + str(tree[a][3])
         if NHX and tree[a][5] != "":
             chaine = chaine + "[&&NHX:S="+tree[a][5]+"]"
-        if isRoot(tree,a):
-            chaine = chaine + ")" + str(getBootstrap(tree,a))        
+        #if isRoot(tree,a):
+            #chaine = chaine + ")" + str(getBootstrap(tree,a))        
     else:
         chaine = "("
         children = list(getChildren(tree,a))
