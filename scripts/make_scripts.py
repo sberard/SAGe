@@ -19,6 +19,6 @@ for alignment_file in alignment_files:
     if string.find(alignment_file,"pruned") >= 0 and string.find(alignment_file,"fasta.") < 0:
         print "iqtree -s "+simulation_dir+"/S/"+alignment_file+" -m GTR+G -alrt 1000 -redo"
         print "mv "+simulation_dir+"/S/"+alignment_file+".* "+output_dir+"/"
-        print "python add_family_name.py "+output_dir+"/"+alignment_file+".mltree"
+        print "python add_family_name.py "+output_dir+"/"+alignment_file+".treefile"
     
     
