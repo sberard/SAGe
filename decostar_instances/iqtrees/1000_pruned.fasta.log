@@ -1,0 +1,122 @@
+IQ-TREE version 1.4.2 for Linux 64-bit built Apr 15 2016
+Copyright (c) 2011-2015 Nguyen Lam Tung, Olga Chernomor, Arndt von Haeseler and Bui Quang Minh.
+
+Host:    meduse (AVX2, FMA3, 7 GB RAM)
+Command: /home/tannier/programs/iqtree/iqtree-1.4.2-Linux/bin//iqtree -s ../simulations/data_D1T2L3I5T4//S/1000_pruned.fasta -m GTR+G -alrt 1000 -redo
+Seed:    530605 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri May 25 14:19:52 2018
+Kernel:  AVX
+
+NOTE: Consider using the multicore version because your CPU has 4 cores!
+
+Reading alignment file ../simulations/data_D1T2L3I5T4//S/1000_pruned.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 26 sequences with 300 columns and 174 patterns (151 informative sites)
+          Gap/Ambiguity  Composition  p-value
+   1  n236_237    0.00%    passed     84.97%
+   2  n266_267    0.00%    passed     88.61%
+   3  n296_297    0.00%    passed     90.88%
+   4  n277_278    0.00%    passed     92.79%
+   5  n290_291    0.00%    passed     97.32%
+   6  n255_256    0.00%    passed     51.41%
+   7  n295_296    0.00%    passed     95.10%
+   8  n286_287    0.00%    passed     79.29%
+   9  n298_299    0.00%    passed     96.44%
+  10  n299_300    0.00%    passed     71.36%
+  11  n287_288    0.00%    passed     99.02%
+  12  n278_279    0.00%    passed     95.26%
+  13  n292_293    0.00%    passed     71.36%
+  14  n265_266    0.00%    passed     91.53%
+  15  n289_290    0.00%    passed     97.32%
+  16  n293_294    0.00%    passed     96.46%
+  17  n280_281    0.00%    passed     58.72%
+  18  n274_275    0.00%    passed     58.84%
+  19  n275_276    0.00%    passed     90.62%
+  20  n285_286    0.00%    passed     77.42%
+  21  n294_295    0.00%    passed     95.11%
+  22  n297_298    0.00%    passed     95.44%
+  23  n244_245    0.00%    passed     93.73%
+  24  n251_252    0.00%    passed     53.09%
+  25  n200_201    0.00%    passed     89.47%
+  26  n300_301    0.00%    passed     71.36%
+****  TOTAL       0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: 3 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: n289_290 (identical to n290_291) is ignored but added at the end
+NOTE: n292_293 (identical to n299_300) is ignored but added at the end
+NOTE: n300_301 (identical to n299_300) is ignored but added at the end
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+
+NOTE: 0 MB RAM is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -1972.457
+2. Current log-likelihood: -1934.856
+3. Current log-likelihood: -1934.406
+Optimal log-likelihood: -1934.400
+Rate parameters:  A-C: 1.046  A-G: 1.263  A-T: 0.815  C-G: 0.878  C-T: 1.135  G-T: 1.000
+Base frequencies:   A: 0.220  C: 0.273  G: 0.263  T: 0.245
+Gamma shape alpha: 12.162
+Parameters optimization took 3 rounds (0.023 sec)
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Computing ML distances based on estimated model parameters... 0.004 sec
+Computing BIONJ tree...
+0.000 seconds
+Log-likelihood of BIONJ tree: -1934.400
+Generating 98 parsimony trees... 0.089 seconds 3 distinct starting trees
+Computing log-likelihood of 3 initial trees ... 0.002 seconds
+Optimizing top 3 initial trees with NNI...
+Iteration 1 / LogL: -1934.400 / Time: 0h:0m:0s
+Estimate model parameters (epsilon = 0.100)
+BETTER SCORE FOUND at iteration 1: -1934.399
+Iteration 2 / LogL: -1934.400 / Time: 0h:0m:0s
+Iteration 3 / LogL: -1934.406 / Time: 0h:0m:0s
+Average CPU time for 1 NNI search: 0.005
+Finish initializing candidate tree set. Number of distinct locally optimal trees: 3
+Current best tree score: -1934.399 / CPU time: 0.104
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 10 / LogL: -1934.432 / Time: 0h:0m:0s
+Iteration 20 / LogL: -1945.554 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 30 / LogL: -1963.124 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 40 / LogL: -1934.399 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 50 / LogL: -1934.401 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -1934.399 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -1963.146 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 80 / LogL: -2256.954 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 90 / LogL: -1934.403 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 100 / LogL: -1934.399 / Time: 0h:0m:1s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 101 ITERATIONS / Time: 0h:0m:1s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -1934.399
+Optimal log-likelihood: -1934.396
+Rate parameters:  A-C: 1.054  A-G: 1.276  A-T: 0.821  C-G: 0.887  C-T: 1.145  G-T: 1.000
+Base frequencies:   A: 0.220  C: 0.273  G: 0.263  T: 0.245
+Gamma shape alpha: 12.089
+Parameters optimization took 1 rounds (0.004 sec)
+BEST SCORE FOUND : -1934.396
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+CPU Time used:  0.108 sec.
+Total tree length: 1.138
+
+Total number of iterations: 101
+CPU time used for tree search: 1.512 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.521 sec (0h:0m:1s)
+Total CPU time used: 1.660 sec (0h:0m:1s)
+Total wall-clock time used: 1.673 sec (0h:0m:1s)
+
+Analysis results written to: 
+  IQ-TREE report:                ../simulations/data_D1T2L3I5T4//S/1000_pruned.fasta.iqtree
+  Maximum-likelihood tree:       ../simulations/data_D1T2L3I5T4//S/1000_pruned.fasta.treefile
+  Likelihood distances:          ../simulations/data_D1T2L3I5T4//S/1000_pruned.fasta.mldist
+  Screen log file:               ../simulations/data_D1T2L3I5T4//S/1000_pruned.fasta.log
+
+Date and Time: Fri May 25 14:19:54 2018

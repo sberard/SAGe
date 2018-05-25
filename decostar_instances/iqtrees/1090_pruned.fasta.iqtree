@@ -1,0 +1,104 @@
+IQ-TREE 1.4.2 built Apr 15 2016
+
+Input file name: ../simulations/data_D1T2L3I5T4//S/1090_pruned.fasta
+Type of analysis: tree reconstruction
+Random seed number: 45967
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh (2015)
+IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol. Biol. Evol., 32:268-274.
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 7 sequences with 300 nucleotide sites
+Number of constant sites: 278 (= 92.6667% of all sites)
+Number of site patterns: 22
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+G4
+
+Rate parameter R:
+
+  A-C: 5.6143
+  A-G: 2.6003
+  A-T: 4.9936
+  C-G: 2.5126
+  C-T: 3.0254
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2328
+  pi(C) = 0.2833
+  pi(G) = 0.2661
+  pi(T) = 0.2178
+
+Rate matrix Q:
+
+  A    -1.383    0.6527    0.2839    0.4462
+  C    0.5362    -1.081    0.2743    0.2703
+  G    0.2484    0.2921   -0.6298   0.08936
+  T    0.4769    0.3517    0.1092   -0.9379
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.1028
+
+ Category  Relative_rate  Proportion
+  1         7.667e-07      0.25
+  2         0.001301       0.25
+  3         0.1013         0.25
+  4         3.897          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -552.2784 (s.e. 24.6535)
+Unconstrained log-likelihood (without tree): -524.4617
+Number of free parameters (#branches + #model parameters): 20
+Akaike information criterion (AIC) score: 1144.5567
+Corrected Akaike information criterion (AICc) score: 1147.5675
+Bayesian information criterion (BIC) score: 1218.6324
+
+Total tree length (sum of branch lengths): 0.0888
+Sum of internal branch lengths: 0.0507 (57.0869% of tree length)
+
+WARNING: 3 near-zero internal branches (<0.0033) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'n277_16' is drawn at root
+Numbers in parentheses are SH-aLRT support (%)
+
++**n277_16
+|
++--n278_17
+|
+|                                           +--n300_25
++-------------------------------------------| (100)
+                                            |     +**n299_24
+                                            |  +**|
+                                            |  |  +**n292_23
+                                            +**| (0)
+                                               |  +--------------n280_19
+                                               +**| (0)
+                                                  +--------n274_15
+
+Tree in newick format:
+
+(n277_16:0.003231,n278_17:0.003501,(n300_25:0.003413,((n299_24:0.000000,n292_23:0.000000):0.000002,(n280_19:0.017616,n274_15:0.010355)0:0.000002)0:0.000002)100:0.050704);
+
+TIME STAMP
+----------
+
+Date and time: Fri May 25 14:34:32 2018
+Total CPU time used: 0.052 seconds (0h:0m:0s)
+Total wall-clock time used: 0.0616181 seconds (0h:0m:0s)
+

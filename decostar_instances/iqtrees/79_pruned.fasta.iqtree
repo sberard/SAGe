@@ -1,0 +1,144 @@
+IQ-TREE 1.4.2 built Apr 15 2016
+
+Input file name: ../simulations/data_D1T2L3I5T4//S/79_pruned.fasta
+Type of analysis: tree reconstruction
+Random seed number: 769856
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh (2015)
+IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol. Biol. Evol., 32:268-274.
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 27 sequences with 300 nucleotide sites
+Number of constant sites: 97 (= 32.3333% of all sites)
+Number of site patterns: 181
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+G4
+
+Rate parameter R:
+
+  A-C: 1.0640
+  A-G: 1.1387
+  A-T: 1.1585
+  C-G: 1.2502
+  C-T: 1.2737
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2427
+  pi(C) = 0.252
+  pi(G) = 0.2248
+  pi(T) = 0.2805
+
+Rate matrix Q:
+
+  A   -0.9874    0.3118    0.2977    0.3779
+  C    0.3002    -1.043    0.3268    0.4155
+  G    0.3213    0.3664    -1.014    0.3262
+  T    0.3269    0.3732    0.2614   -0.9616
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 11.46
+
+ Category  Relative_rate  Proportion
+  1         0.6534         0.25
+  2         0.8809         0.25
+  3         1.07           0.25
+  4         1.396          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2162.8963 (s.e. 74.9880)
+Unconstrained log-likelihood (without tree): -1361.3846
+Number of free parameters (#branches + #model parameters): 60
+Akaike information criterion (AIC) score: 4445.7925
+Corrected Akaike information criterion (AICc) score: 4476.4201
+Bayesian information criterion (BIC) score: 4668.0195
+
+Total tree length (sum of branch lengths): 1.2390
+Sum of internal branch lengths: 0.7355 (59.3661% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0033) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'n299_362' is drawn at root
+Numbers in parentheses are SH-aLRT support (%)
+
++**n299_362
+|
+|                                         +--n265_328
+|                                    +----| (97.7)
+|                                    |    +--n266_329
+|                           +--------| (99.7)
+|                           |        |     +--n286_349
+|                           |        +-----| (98.8)
+|                           |              +**n285_348
+|           +---------------| (100)
+|           |               |                                     +**n298_361
+|           |               |                                  +--|
+|           |               |                                  |  +**n297_360
+|           |               |                               +**| (0)
+|           |               |                               |  +--n275_338
+|           |               |                            +--| (85.6)
+|           |               |                            |  |  +**n294_357
+|           |               |                            |  +--| (89.9)
+|           |               |                            |     +--n293_356
+|           |               |                      +-----| (98.6)
+|           |               |                      |     |     +--n290_353
+|           |               |                      |     |  +--| (87.7)
+|           |               |                      |     |  |  |  +--n289_352
+|           |               |                      |     |  |  +**| (0)
+|           |               |                      |     |  |     +--n287_350
+|           |               |                      |     +--| (91.1)
+|           |               |                      |        |  +--n295_358
+|           |               |                      |        +--| (97.5)
+|           |               |                      |           +--n296_359
+|           |               |                 +----| (96.2)
+|           |               |                 |    +--n236_297
+|           |               |  +--------------| (100)
+|           |               |  |              +------------n200_257
+|           |               +--| (75.1)
+|           |                  |                         +---n255_318
+|           |                  |          +--------------| (100)
+|           |                  |          |              +--n251_314
+|           |                  +----------| (99.8)
+|           |                             |  +---------------n244_305
+|           |                             +--| (86.2)
+|           |                                +-------------------n244_307
+|        +--| (88.8)
+|        |  |   +--n278_341
+|        |  +---| (98.2)
+|        |      +--n277_340
+|     +--| (87.2)
+|     |  +--n274_337
+|  +--| (93.7)
+|  |  +--n280_343
++--|
+|  +**n292_355
+|
++**n300_363
+
+Tree in newick format:
+
+(n299_362:0.000000,(((((((n265_328:0.019698,n266_329:0.007813)97.7:0.032520,(n286_349:0.010170,n285_348:0.003242)98.8:0.040423)99.7:0.061492,(((((((n298_361:0.000000,n297_360:0.000000):0.006700,n275_338:0.006701)0:0.000002,(n294_357:0.000002,n293_356:0.003341)89.9:0.006704)85.6:0.006678,((n290_353:0.003339,(n289_352:0.006696,n287_350:0.003341)0:0.000002)87.7:0.006702,(n295_358:0.003348,n296_359:0.003342)97.5:0.016999)91.1:0.010199)98.6:0.039173,n236_297:0.024153)96.2:0.037683,n200_257:0.084166)100:0.101413,((n255_318:0.027417,n251_314:0.020461)100:0.095892,(n244_305:0.106337,n244_307:0.130152)86.2:0.020610)99.8:0.072591)75.1:0.012677)100:0.107516,(n278_341:0.010140,n277_340:0.006690)98.2:0.028622)88.8:0.016817,n274_337:0.009481)87.2:0.007371,n280_343:0.006720)93.7:0.010117,n292_355:0.000002):0.003343,n300_363:0.000000);
+
+TIME STAMP
+----------
+
+Date and time: Fri May 25 14:14:49 2018
+Total CPU time used: 1.796 seconds (0h:0m:1s)
+Total wall-clock time used: 1.80943 seconds (0h:0m:1s)
+

@@ -1,0 +1,148 @@
+IQ-TREE 1.4.2 built Apr 15 2016
+
+Input file name: ../simulations/data_D1T2L3I5T4//S/415_pruned.fasta
+Type of analysis: tree reconstruction
+Random seed number: 430743
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh (2015)
+IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol. Biol. Evol., 32:268-274.
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 29 sequences with 300 nucleotide sites
+Number of constant sites: 84 (= 28% of all sites)
+Number of site patterns: 194
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+G4
+
+Rate parameter R:
+
+  A-C: 1.1962
+  A-G: 1.6059
+  A-T: 0.9805
+  C-G: 1.2359
+  C-T: 1.5958
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2376
+  pi(C) = 0.2677
+  pi(G) = 0.2339
+  pi(T) = 0.2607
+
+Rate matrix Q:
+
+  A   -0.9998    0.3365    0.3947    0.2686
+  C    0.2986     -1.04    0.3038    0.4371
+  G    0.4009    0.3477    -1.022    0.2739
+  T    0.2448    0.4489    0.2458   -0.9395
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 3.955
+
+ Category  Relative_rate  Proportion
+  1         0.4519         0.25
+  2         0.7737         0.25
+  3         1.084          0.25
+  4         1.69           0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2351.3141 (s.e. 80.7980)
+Unconstrained log-likelihood (without tree): -1414.8118
+Number of free parameters (#branches + #model parameters): 64
+Akaike information criterion (AIC) score: 4830.6282
+Corrected Akaike information criterion (AICc) score: 4866.0325
+Bayesian information criterion (BIC) score: 5067.6703
+
+Total tree length (sum of branch lengths): 1.4684
+Sum of internal branch lengths: 0.8677 (59.0932% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0033) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'n280_375' is drawn at root
+Numbers in parentheses are SH-aLRT support (%)
+
++--n280_375
+|
+|                                               +**n296_391
+|                                            +--| (87.2)
+|                                            |  +--n295_390
+|                                         +--| (89)
+|                                         |  |     +**n289_384
+|                                         |  |  +**|
+|                                         |  |  |  +**n287_382
+|                                         |  +--| (79.2)
+|                                         |     +--n290_385
+|                                      +--| (91.6)
+|                                      |  |        +--n297_392
+|                                      |  |     +--| (95.9)
+|                                      |  |     |  +--n298_393
+|                                      |  |  +**| (0)
+|                                      |  |  |  |  +--n294_389
+|                                      |  |  |  +--| (77.8)
+|                                      |  |  |     +--n293_388
+|                                      |  +--| (77.3)
+|                                      |     +--n275_370
+|                                 +----| (94.1)
+|                                 |    +--n236_323
+|                         +-------| (98.1)
+|                         |       +-----------n200_275
+|                      +--| (43.8)
+|                      |  |            +---------------------n244_333
+|                      |  |         +--| (72.1)
+|                      |  |         |  |             +----n255_350
+|                      |  |         |  |  +----------| (99.8)
+|                      |  |         |  |  |          +--n251_344
+|                      |  |         |  +--| (84)
+|                      |  |         |     +--------------------n244_335
+|                      |  +---------| (100)
+|                      |            |                 +--n251_342
+|                      |            +-----------------| (100)
+|                      |                              +--n255_348
+|       +--------------| (100)
+|       |              |                  +--n286_381
+|       |              |      +-----------| (100)
+|       |              |      |           +**n285_380
+|       |              +------| (98.5)
+|       |                     |      +**n266_361
+|       |                     +------| (98.5)
+|       |                            +--n265_360
+|  +----| (97.9)
+|  |    |  +**n277_372
+|  |    +--| (94)
+|  |       +--n278_373
++--| (75.3)
+|  +--n274_369
+|
+|     +--n299_394
+|  +--| (83.2)
+|  |  +**n300_395
++--| (78.3)
+   +**n292_387
+
+Tree in newick format:
+
+(n280_375:0.013499,(((((((((n296_391:0.000002,n295_390:0.006730)87.2:0.006739,((n289_384:0.000000,n287_382:0.000000):0.000002,n290_385:0.003354)79.2:0.003351)89:0.006776,(((n297_392:0.003361,n298_393:0.003360)95.9:0.013545,(n294_389:0.006741,n293_388:0.006746)77.8:0.003360)0:0.000002,n275_370:0.003354)77.3:0.003334)91.6:0.016959,n236_323:0.010890)94.1:0.038263,n200_275:0.090507)98.1:0.058344,((n244_333:0.159217,((n255_350:0.038341,n251_344:0.013894)99.8:0.082567,n244_335:0.155550)84:0.022822)72.1:0.012380,(n251_342:0.022664,n255_348:0.015237)100:0.131975)100:0.076382)43.8:0.009169,((n286_381:0.003350,n285_380:0.000002)100:0.088411,(n266_361:0.000002,n265_360:0.016935)98.5:0.051108)98.5:0.050632)100:0.113876,(n277_372:0.000002,n278_373:0.010094)94:0.028083)97.9:0.039613,n274_369:0.013509)75.3:0.003369,((n299_394:0.003340,n300_395:0.000002)83.2:0.003342,n292_387:0.000002)78.3:0.003336);
+
+TIME STAMP
+----------
+
+Date and time: Fri May 25 14:22:52 2018
+Total CPU time used: 2.328 seconds (0h:0m:2s)
+Total wall-clock time used: 2.3436 seconds (0h:0m:2s)
+
