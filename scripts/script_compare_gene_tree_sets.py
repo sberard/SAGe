@@ -112,7 +112,10 @@ for gene in degree["PNJ"].keys():
     #print degree["PNJ"][gene],value
     tab["PNJ"][value] = tab["PNJ"][value] + 1
 for i in range(nb_categories):
-    output.write(str(i*max_value/nb_categories)+" "+str(tab["RAW"][i]/float(sum(ancestral_raw.values())))+" "+str(tab["PNJ"][i]/float(sum(ancestral_pnj.values())))+" 0\n")
+    if i == 2:
+        output.write(str(i*max_value/nb_categories)+" "+str(tab["RAW"][i]/float(sum(ancestral_raw.values())))+" "+str(tab["PNJ"][i]/float(sum(ancestral_pnj.values())))+" 1\n")
+    else:
+        output.write(str(i*max_value/nb_categories)+" "+str(tab["RAW"][i]/float(sum(ancestral_raw.values())))+" "+str(tab["PNJ"][i]/float(sum(ancestral_pnj.values())))+" 0\n")
 
 
 

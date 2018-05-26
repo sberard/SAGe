@@ -71,8 +71,8 @@ for file_name in gene_trees_files:
             list_gene_tree.write("gene_trees_"+expname+"/"+file_name+"\n")
 
 genome_files = os.listdir(simulyon_dir+"/G/Genomes/")
-adjacencies = open(decostar_dir+"/adjacencies","w")
-parameter_file.write("adjacencies.file=adjacencies\n")
+adjacencies = open(decostar_dir+"/adjacencies_"+expname,"w")
+parameter_file.write("adjacencies.file=adjacencies_"+expname+"\n")
 
 for file_name in genome_files:
     species = file_name.split("_")[0]
