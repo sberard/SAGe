@@ -1,8 +1,8 @@
 IQ-TREE 1.4.2 built Apr 15 2016
 
-Input file name: ../simulations/data_D8T0L15I8T8//S/585_pruned.fasta
+Input file name: ../simulations/data_D10T0L20I10T10//S/585_pruned.fasta
 Type of analysis: tree reconstruction
-Random seed number: 54080
+Random seed number: 783605
 
 REFERENCES
 ----------
@@ -16,9 +16,9 @@ maximum likelihood phylogenies. Mol. Biol. Evol., 32:268-274.
 SEQUENCE ALIGNMENT
 ------------------
 
-Input data: 16 sequences with 300 nucleotide sites
-Number of constant sites: 114 (= 38% of all sites)
-Number of site patterns: 152
+Input data: 26 sequences with 300 nucleotide sites
+Number of constant sites: 103 (= 34.3333% of all sites)
+Number of site patterns: 178
 
 SUBSTITUTION PROCESS
 --------------------
@@ -27,96 +27,116 @@ Model of substitution: GTR+F+G4
 
 Rate parameter R:
 
-  A-C: 0.9136
-  A-G: 1.0524
-  A-T: 0.8676
-  C-G: 0.8521
-  C-T: 1.1608
+  A-C: 1.1787
+  A-G: 1.1880
+  A-T: 0.9966
+  C-G: 0.9121
+  C-T: 1.0300
   G-T: 1.0000
 
 State frequencies: (empirical counts from alignment)
 
-  pi(A) = 0.2347
-  pi(C) = 0.2271
-  pi(G) = 0.2982
-  pi(T) = 0.24
+  pi(A) = 0.1971
+  pi(C) = 0.2822
+  pi(G) = 0.2633
+  pi(T) = 0.2574
 
 Rate matrix Q:
 
-  A    -1.003    0.2852    0.4314    0.2862
-  C    0.2947    -1.027    0.3493    0.3829
-  G    0.3395     0.266   -0.9353    0.3299
-  T    0.2798    0.3624    0.4099    -1.052
+  A    -1.162    0.4285     0.403    0.3304
+  C    0.2993   -0.9502    0.3094    0.3415
+  G    0.3016    0.3316   -0.9647    0.3315
+  T     0.253    0.3745    0.3392   -0.9667
 
 Model of rate heterogeneity: Gamma with 4 categories
-Gamma shape alpha: 998.3
+Gamma shape alpha: 202.3
 
  Category  Relative_rate  Proportion
-  1         0.9601         0.25
-  2         0.9894         0.25
-  3         1.01           0.25
-  4         1.041          0.25
+  1         0.9121         0.25
+  2         0.9758         0.25
+  3         1.021          0.25
+  4         1.091          0.25
 Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
 
 MAXIMUM LIKELIHOOD TREE
 -----------------------
 
-Log-likelihood of the tree: -1690.1617 (s.e. 57.0000)
-Unconstrained log-likelihood (without tree): -1269.7556
-Number of free parameters (#branches + #model parameters): 38
-Akaike information criterion (AIC) score: 3456.3234
-Corrected Akaike information criterion (AICc) score: 3467.6797
-Bayesian information criterion (BIC) score: 3597.0672
+Log-likelihood of the tree: -1972.9522 (s.e. 68.3299)
+Unconstrained log-likelihood (without tree): -1333.1892
+Number of free parameters (#branches + #model parameters): 58
+Akaike information criterion (AIC) score: 4061.9045
+Corrected Akaike information criterion (AICc) score: 4090.3028
+Bayesian information criterion (BIC) score: 4276.7239
 
-Total tree length (sum of branch lengths): 0.9605
-Sum of internal branch lengths: 0.5911 (61.5454% of tree length)
+Total tree length (sum of branch lengths): 1.1299
+Sum of internal branch lengths: 0.6262 (55.4188% of tree length)
 
-WARNING: 3 near-zero internal branches (<0.0033) should be treated with caution
+WARNING: 5 near-zero internal branches (<0.0033) should be treated with caution
          Such branches are denoted by '**' in the figure below
 
-NOTE: Tree is UNROOTED although outgroup taxon 'n200_201' is drawn at root
+NOTE: Tree is UNROOTED although outgroup taxon 'n289_290' is drawn at root
 Numbers in parentheses are SH-aLRT support (%)
 
-+--------------n200_201
++**n289_290
 |
-|                                   +--n286_275
-|                       +-----------| (99.9)
-|                       |           +**n285_274
-|          +------------| (99.8)
-|          |            |         +--n265_262
-|          |            +---------| (99.6)
-|          |                      +--n266_263
-|       +--| (68)
-|       |  |                                +--n280_271
-|       |  |                             +**| (0)
-|       |  |                             |  +--n300_279
-|       |  |                          +**| (0)
-|       |  |                          |  |  +**n299_278
-|       |  |                          |  +**|
-|       |  |                          |     +**n292_277
-|       |  |                      +---| (95)
-|       |  |                      |   +--n274_267
-|       |  +----------------------| (100)
-|       |                         |     +--n277_268
-|       |                         +-----| (95.3)
-|       |                               +--n278_269
-+-------| (97.4)
-|       |                      +---------------------------n244_243
-|       +----------------------| (99.9)
-|                              |                   +--n255_254
-|                              +-------------------| (100)
-|                                                  +------n251_250
+|                 +**n294_295
+|              +**| (0)
+|              |  +--n293_294
+|           +**| (75.6)
+|           |  |  +**n298_299
+|           |  +--| (95)
+|           |     +--n297_298
+|        +**| (34.1)
+|        |  +--n275_276
+|     +--| (96.7)
+|     |  |                               +--n266_267
+|     |  |                    +----------| (99.9)
+|     |  |                    |          +--n265_266
+|     |  |               +----| (94.4)
+|     |  |               |    |              +**n285_286
+|     |  |               |    +--------------|
+|     |  |               |                   +**n286_287
+|     |  |           +---| (91.9)
+|     |  |           |   |                            +**n299_300
+|     |  |           |   |                         +**|
+|     |  |           |   |                         |  +**n292_293
+|     |  |           |   |                      +**| (0)
+|     |  |           |   |                      |  +--n300_301
+|     |  |           |   |                   +--| (76.4)
+|     |  |           |   |                   |  +--n280_281
+|     |  |           |   |                +--| (94.9)
+|     |  |           |   |                |  +--n274_275
+|     |  |           |   +----------------| (100)
+|     |  |           |                    |   +--n278_279
+|     |  |           |                    +---| (97.6)
+|     |  |           |                        +--n277_278
+|     |  |      +----| (96.5)
+|     |  |      |    |                                   +----n251_252
+|     |  |      |    |             +---------------------| (100)
+|     |  |      |    |             |                     +--n255_256
+|     |  |      |    +-------------| (99.5)
+|     |  |      |                  +------------------------n244_245
+|     |  |   +--| (88.2)
+|     |  |   |  +--------------n200_201
+|     |  +---| (98.4)
+|     |      +------n236_237
+|  +--| (91.4)
+|  |  |  +--n295_296
+|  |  +--| (95.8)
+|  |     +--n296_297
++--| (76.6)
+|  +--n287_288
 |
-+----------n236_237
++--n290_291
 
 Tree in newick format:
 
-(n200_201:0.073887,((((n286_275:0.006696,n285_274:0.000002)99.9:0.061337,(n265_262:0.008503,n266_263:0.008295)99.6:0.050977)99.8:0.065538,((((n280_271:0.006694,n300_279:0.003340)0:0.000002,(n299_278:0.000000,n292_277:0.000000):0.000002)0:0.000002,n274_267:0.010076)95:0.022854,(n277_268:0.006131,n278_269:0.007273)95.3:0.029724)100:0.110098)68:0.005711,(n244_243:0.136724,(n255_254:0.010017,n251_250:0.034685)100:0.096432)99.9:0.109709)97.4:0.038750,n236_237:0.057025);
+(n289_290:0.000002,((((((n294_295:0.000002,n293_294:0.003343)0:0.000003,(n298_299:0.000001,n297_298:0.006700)95:0.010074)75.6:0.002141,n275_276:0.009753)34.1:0.001495,((((((n266_267:0.006737,n265_266:0.006660)99.9:0.065800,(n285_286:0.000000,n286_287:0.000000):0.091290)94.4:0.034540,(((((n299_300:0.000000,n292_293:0.000000):0.000002,n300_301:0.003341)0:0.000003,n280_281:0.010076)76.4:0.003471,n274_275:0.006601)94.9:0.022122,(n278_279:0.006668,n277_278:0.010090)97.6:0.025865)100:0.102747)91.9:0.025399,((n251_252:0.030460,n255_256:0.014268)100:0.131619,n244_245:0.151099)99.5:0.086155)96.5:0.030334,n200_201:0.089745)88.2:0.014706,n236_237:0.043493)98.4:0.025652)96.7:0.017002,(n295_296:0.003343,n296_297:0.003346)95.8:0.013556)91.4:0.010134,n287_288:0.003349)76.6:0.003353,n290_291:0.003348);
 
 TIME STAMP
 ----------
 
-Date and time: Fri May 25 23:03:31 2018
-Total CPU time used: 1.128 seconds (0h:0m:1s)
-Total wall-clock time used: 1.13076 seconds (0h:0m:1s)
+Date and time: Fri Jun  1 11:06:53 2018
+Total CPU time used: 1.368 seconds (0h:0m:1s)
+Total wall-clock time used: 1.38034 seconds (0h:0m:1s)
 

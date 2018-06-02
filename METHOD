@@ -1,0 +1,16 @@
+ZOMBI_DIR
+EXPE_DIR
+
+cd ZOMBI_DIR
+python3 G EXPE_DIR/simulations/parameters/GenomeParameters.tsv EXPE_DIR/simulations/parameters/data_D10T10L20I10T10
+python3 G EXPE_DIR/simulations/parameters/GenomeParameters_without_transfer.tsv EXPE_DIR/simulations/parameters/data_D10T0L20I10T10
+python3 S EXPE_DIR/simulations/parameters/SequenceParameters.tsv EXPE_DIR/simulations/parameters/data_D10T10L20I10T10
+python3 S EXPE_DIR/simulations/parameters/SequenceParameters.tsv EXPE_DIR/simulations/parameters/data_D10T0L20I10T10
+
+cd EXPE_DIR/scripts
+python make_scripts.py ../simulations/data_D10T0L20I10T10/ ../decostar_instances/gene_trees_notransfers_iqtrees/ >run_iqtree_notransfer.sh
+python make_scripts.py ../simulations/data_D10T10L20I10T10/ ../decostar_instances/gene_trees_transfers_iqtrees/ >run_iqtree_transfer.sh
+sh run_iqtree_notransfer.sh
+sh run_iqtree_transfer.sh
+
+
