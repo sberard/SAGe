@@ -2,7 +2,7 @@ IQ-TREE 1.4.2 built Apr 15 2016
 
 Input file name: ../simulations/data_D10T0L20I10T10//S/616_pruned.fasta
 Type of analysis: tree reconstruction
-Random seed number: 432112
+Random seed number: 818448
 
 REFERENCES
 ----------
@@ -16,9 +16,9 @@ maximum likelihood phylogenies. Mol. Biol. Evol., 32:268-274.
 SEQUENCE ALIGNMENT
 ------------------
 
-Input data: 3 sequences with 300 nucleotide sites
-Number of constant sites: 219 (= 73% of all sites)
-Number of site patterns: 27
+Input data: 25 sequences with 300 nucleotide sites
+Number of constant sites: 1 (= 0.333333% of all sites)
+Number of site patterns: 298
 
 SUBSTITUTION PROCESS
 --------------------
@@ -27,67 +27,111 @@ Model of substitution: GTR+F+G4
 
 Rate parameter R:
 
-  A-C: 0.9814
-  A-G: 1.0219
-  A-T: 0.6184
-  C-G: 0.4500
-  C-T: 0.7608
+  A-C: 1.4800
+  A-G: 1.2358
+  A-T: 1.0876
+  C-G: 1.0253
+  C-T: 1.3076
   G-T: 1.0000
 
 State frequencies: (empirical counts from alignment)
 
-  pi(A) = 0.2511
-  pi(C) = 0.2811
-  pi(G) = 0.23
-  pi(T) = 0.2378
+  pi(A) = 0.2145
+  pi(C) = 0.2752
+  pi(G) = 0.2525
+  pi(T) = 0.2577
 
 Rate matrix Q:
 
-  A    -1.097      0.46    0.3919    0.2452
-  C    0.4109   -0.8852    0.1726    0.3016
-  G    0.4279    0.2109    -1.035    0.3965
-  T    0.2589    0.3566    0.3835   -0.9991
+  A    -1.127    0.4591    0.3518     0.316
+  C    0.3579     -1.03    0.2919    0.3799
+  G    0.2989    0.3181   -0.9075    0.2905
+  T     0.263    0.4056    0.2847   -0.9533
 
 Model of rate heterogeneity: Gamma with 4 categories
-Gamma shape alpha: 1.938
+Gamma shape alpha: 3.598
 
  Category  Relative_rate  Proportion
-  1         0.2858         0.25
-  2         0.6483         0.25
-  3         1.068          0.25
-  4         1.998          0.25
+  1         0.4308         0.25
+  2         0.76           0.25
+  3         1.084          0.25
+  4         1.725          0.25
 Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
 
 MAXIMUM LIKELIHOOD TREE
 -----------------------
 
-Log-likelihood of the tree: -729.7936 (s.e. 22.8956)
-Unconstrained log-likelihood (without tree): -711.5047
-Number of free parameters (#branches + #model parameters): 12
-Akaike information criterion (AIC) score: 1483.5872
-Corrected Akaike information criterion (AICc) score: 1484.6743
-Bayesian information criterion (BIC) score: 1528.0325
+Log-likelihood of the tree: -4887.2733 (s.e. 89.0289)
+Unconstrained log-likelihood (without tree): -1708.3622
+Number of free parameters (#branches + #model parameters): 56
+Akaike information criterion (AIC) score: 9886.5465
+Corrected Akaike information criterion (AICc) score: 9912.8181
+Bayesian information criterion (BIC) score: 10093.9583
 
-Total tree length (sum of branch lengths): 0.3609
-Sum of internal branch lengths: 0.0000 (0.0000% of tree length)
+Total tree length (sum of branch lengths): 10.2142
+Sum of internal branch lengths: 6.1103 (59.8214% of tree length)
 
-NOTE: Tree is UNROOTED although outgroup taxon 'n244_141' is drawn at root
+NOTE: Tree is UNROOTED although outgroup taxon 'n277_278' is drawn at root
 Numbers in parentheses are SH-aLRT support (%)
 
-+-----------------------------------------------------------n244_141
++--n277_278
 |
-+----n251_144
+|                         +--n286_287
+|                   +-----| (94.1)
+|                   |     +--n285_286
+|          +--------| (97.7)
+|          |        |   +--n265_266
+|          |        +---| (95.1)
+|          |            +--n266_267
+|  +-------| (92.2)
+|  |       |                    +--n296_297
+|  |       |                 +--| (99.1)
+|  |       |                 |  +--n295_296
+|  |       |              +--| (95.6)
+|  |       |              |  |        +--n275_276
+|  |       |              |  |     +--| (86.6)
+|  |       |              |  |     |  |  +--n293_294
+|  |       |              |  |     |  +--| (99.4)
+|  |       |              |  |     |     +--n294_295
+|  |       |              |  |  +--| (57.6)
+|  |       |              |  |  |  |  +--n297_298
+|  |       |              |  |  |  +--| (99.5)
+|  |       |              |  |  |     +--n298_299
+|  |       |              |  +--| (98.7)
+|  |       |              |     +-----n236_237
+|  |       |           +--| (69.2)
+|  |       |           |  |  +--n290_291
+|  |       |           |  +--| (73.3)
+|  |       |           |     +--n287_288
+|  |       |  +--------| (82.1)
+|  |       |  |        +**n289_290
+|  |       +--| (47)
+|  |          |                     +---n255_256
+|  |          |                +----| (31.1)
+|  |          |                |    +**n251_252
+|  |          +----------------| (88.2)
+|  |                           +-----------------------------n244_245
++--| (28.5)
+|  +--n278_279
 |
-+--n255_146
+|      +--n274_275
+|   +--| (63.8)
+|   |  |     +**n299_300
+|   |  |  +--| (80.2)
+|   |  |  |  +--n300_301
+|   |  +--| (99.4)
+|   |     +--n292_293
++---| (100)
+    +--n280_281
 
 Tree in newick format:
 
-(n244_141:0.312358,n251_144:0.031198,n255_146:0.017384);
+(n277_278:0.063371,((((n286_287:0.023328,n285_286:0.070739)94.1:0.529454,(n265_266:0.092555,n266_267:0.120244)95.1:0.397702)97.7:0.772976,(((((n296_297:0.023479,n295_296:0.010918)99.1:0.056076,(((n275_276:0.084905,(n293_294:0.015352,n294_295:0.038516)99.4:0.059080)86.6:0.018264,(n297_298:0.009951,n298_299:0.021050)99.5:0.057815)57.6:0.037186,n236_237:0.546565)98.7:0.097334)95.6:0.039710,(n290_291:0.031399,n287_288:0.038539)73.3:0.003498)69.2:0.016522,n289_290:0.000002)82.1:0.786469,((n255_256:0.341515,n251_252:0.000002)31.1:0.445864,n244_245:2.417965)88.2:1.415379)47:0.280213)92.2:0.659234,n278_279:0.038403)28.5:0.017965,((n274_275:0.079307,((n299_300:0.000002,n300_301:0.010107)80.2:0.010091,n292_293:0.013665)99.4:0.036100)63.8:0.011610,n280_281:0.012066)100:0.361765);
 
 TIME STAMP
 ----------
 
-Date and time: Fri Jun  1 11:03:25 2018
-Total CPU time used: 0.02 seconds (0h:0m:0s)
-Total wall-clock time used: 0.0218899 seconds (0h:0m:0s)
+Date and time: Sun Jun  3 23:59:54 2018
+Total CPU time used: 3.864 seconds (0h:0m:3s)
+Total wall-clock time used: 3.86697 seconds (0h:0m:3s)
 

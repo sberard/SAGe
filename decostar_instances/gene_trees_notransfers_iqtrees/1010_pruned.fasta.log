@@ -3,62 +3,76 @@ Copyright (c) 2011-2015 Nguyen Lam Tung, Olga Chernomor, Arndt von Haeseler and 
 
 Host:    meduse (AVX2, FMA3, 7 GB RAM)
 Command: iqtree -s ../simulations/data_D10T0L20I10T10//S/1010_pruned.fasta -m GTR+G -alrt 1000 -redo
-Seed:    468407 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Fri Jun  1 11:08:16 2018
+Seed:    331473 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Jun  3 20:21:52 2018
 Kernel:  AVX
 
 NOTE: Consider using the multicore version because your CPU has 4 cores!
 
 Reading alignment file ../simulations/data_D10T0L20I10T10//S/1010_pruned.fasta ... Fasta format detected
 Alignment most likely contains DNA/RNA sequences
-Alignment has 3 sequences with 300 columns and 28 patterns (0 informative sites)
+Alignment has 11 sequences with 300 columns and 168 patterns (225 informative sites)
          Gap/Ambiguity  Composition  p-value
-   1  n251_90    0.00%    passed     99.70%
-   2  n255_92    0.00%    passed     98.76%
-   3  n244_89    0.00%    passed     98.07%
+   1  n277_84    0.00%    passed     39.47%
+   2  n299_94    0.00%    passed     97.95%
+   3  n278_85    0.00%    passed     68.84%
+   4  n292_93    0.00%    passed     95.61%
+   5  n274_83    0.00%    passed     97.89%
+   6  n280_87    0.00%    passed     79.76%
+   7  n285_90    0.00%    passed     47.46%
+   8  n286_91    0.00%    passed     53.19%
+   9  n266_79    0.00%    passed     67.31%
+  10  n265_78    0.00%    passed     46.51%
+  11  n300_95    0.00%    passed     97.35%
 ****  TOTAL      0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
 
 Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
 
 NOTE: 0 MB RAM is required!
 Estimate model parameters (epsilon = 0.100)
-1. Initial log-likelihood: -995.554
-2. Current log-likelihood: -736.055
-3. Current log-likelihood: -735.891
-Optimal log-likelihood: -735.833
-Rate parameters:  A-C: 1.544  A-G: 2.963  A-T: 2.214  C-G: 2.267  C-T: 2.432  G-T: 1.000
-Base frequencies:   A: 0.223  C: 0.250  G: 0.231  T: 0.296
-Gamma shape alpha: 1.345
-Parameters optimization took 3 rounds (0.001 sec)
+1. Initial log-likelihood: -1896.255
+2. Current log-likelihood: -1859.666
+3. Current log-likelihood: -1853.472
+4. Current log-likelihood: -1851.661
+5. Current log-likelihood: -1851.146
+6. Current log-likelihood: -1850.996
+Optimal log-likelihood: -1850.951
+Rate parameters:  A-C: 1.674  A-G: 0.791  A-T: 1.018  C-G: 1.204  C-T: 1.455  G-T: 1.000
+Base frequencies:   A: 0.204  C: 0.260  G: 0.279  T: 0.256
+Gamma shape alpha: 25.684
+Parameters optimization took 6 rounds (0.021 sec)
 --------------------------------------------------------------------
 |             INITIALIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
 Computing ML distances based on estimated model parameters... 0.000 sec
 Computing BIONJ tree...
 0.000 seconds
-Log-likelihood of BIONJ tree: -735.833
-Generating 99 parsimony trees... 0.003 seconds 1 distinct starting trees
-Computing log-likelihood of 1 initial trees ... 0.000 seconds
-Optimizing top 1 initial trees with NNI...
-Iteration 1 / LogL: -735.833 / Time: 0h:0m:0s
+Log-likelihood of BIONJ tree: -1850.948
+Generating 99 parsimony trees... 0.027 seconds 4 distinct starting trees
+Computing log-likelihood of 4 initial trees ... 0.002 seconds
+Optimizing top 4 initial trees with NNI...
+Iteration 1 / LogL: -1850.941 / Time: 0h:0m:0s
 Estimate model parameters (epsilon = 0.100)
-BETTER SCORE FOUND at iteration 1: -735.806
-Average CPU time for 1 NNI search: 0.000
-Finish initializing candidate tree set. Number of distinct locally optimal trees: 1
-Current best tree score: -735.806 / CPU time: 0.000
+BETTER TREE FOUND at iteration 1: -1850.931
+Iteration 2 / LogL: -1850.947 / Time: 0h:0m:0s
+Iteration 3 / LogL: -1850.954 / Time: 0h:0m:0s
+Iteration 4 / LogL: -1850.931 / Time: 0h:0m:0s
+Average CPU time for 1 NNI search: 0.003
+Finish initializing candidate tree set. Number of distinct locally optimal trees: 2
+Current best tree score: -1850.931 / CPU time: 0.036
 --------------------------------------------------------------------
 |               OPTIMIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Iteration 10 / LogL: -735.806 / Time: 0h:0m:0s
-Iteration 20 / LogL: -735.806 / Time: 0h:0m:0s (0h:0m:0s left)
-Iteration 30 / LogL: -735.806 / Time: 0h:0m:0s (0h:0m:0s left)
-Iteration 40 / LogL: -735.806 / Time: 0h:0m:0s (0h:0m:0s left)
-Iteration 50 / LogL: -735.806 / Time: 0h:0m:0s (0h:0m:0s left)
-Iteration 60 / LogL: -735.806 / Time: 0h:0m:0s (0h:0m:0s left)
-Iteration 70 / LogL: -735.806 / Time: 0h:0m:0s (0h:0m:0s left)
-Iteration 80 / LogL: -735.806 / Time: 0h:0m:0s (0h:0m:0s left)
-Iteration 90 / LogL: -735.806 / Time: 0h:0m:0s (0h:0m:0s left)
-Iteration 100 / LogL: -735.806 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 10 / LogL: -1856.086 / Time: 0h:0m:0s
+Iteration 20 / LogL: -1850.932 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 30 / LogL: -1850.932 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 40 / LogL: -1850.931 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -1850.964 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -2483.798 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -1850.964 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -1850.931 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -1853.463 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -1850.931 / Time: 0h:0m:0s (0h:0m:0s left)
 TREE SEARCH COMPLETED AFTER 101 ITERATIONS / Time: 0h:0m:0s
 
 --------------------------------------------------------------------
@@ -66,27 +80,23 @@ TREE SEARCH COMPLETED AFTER 101 ITERATIONS / Time: 0h:0m:0s
 --------------------------------------------------------------------
 Performs final model parameters optimization
 Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -735.806
-2. Current log-likelihood: -735.791
-3. Current log-likelihood: -735.773
-4. Current log-likelihood: -735.761
-5. Current log-likelihood: -735.748
-Optimal log-likelihood: -735.739
-Rate parameters:  A-C: 1.781  A-G: 3.341  A-T: 2.446  C-G: 2.639  C-T: 2.743  G-T: 1.000
-Base frequencies:   A: 0.223  C: 0.250  G: 0.231  T: 0.296
-Gamma shape alpha: 1.406
-Parameters optimization took 5 rounds (0.001 sec)
-BEST SCORE FOUND : -735.739
+1. Initial log-likelihood: -1850.931
+Optimal log-likelihood: -1850.928
+Rate parameters:  A-C: 1.656  A-G: 0.776  A-T: 1.009  C-G: 1.198  C-T: 1.449  G-T: 1.000
+Base frequencies:   A: 0.204  C: 0.260  G: 0.279  T: 0.256
+Gamma shape alpha: 35.761
+Parameters optimization took 1 rounds (0.003 sec)
+BEST SCORE FOUND : -1850.928
 
 Testing tree branches by SH-like aLRT with 1000 replicates...
-CPU Time used:  0.000 sec.
-Total tree length: 0.390
+CPU Time used:  0.036 sec.
+Total tree length: 1.931
 
 Total number of iterations: 101
-CPU time used for tree search: 0.004 sec (0h:0m:0s)
-Wall-clock time used for tree search: 0.008 sec (0h:0m:0s)
-Total CPU time used: 0.012 sec (0h:0m:0s)
-Total wall-clock time used: 0.016 sec (0h:0m:0s)
+CPU time used for tree search: 0.564 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.568 sec (0h:0m:0s)
+Total CPU time used: 0.636 sec (0h:0m:0s)
+Total wall-clock time used: 0.642 sec (0h:0m:0s)
 
 Analysis results written to: 
   IQ-TREE report:                ../simulations/data_D10T0L20I10T10//S/1010_pruned.fasta.iqtree
@@ -94,4 +104,4 @@ Analysis results written to:
   Likelihood distances:          ../simulations/data_D10T0L20I10T10//S/1010_pruned.fasta.mldist
   Screen log file:               ../simulations/data_D10T0L20I10T10//S/1010_pruned.fasta.log
 
-Date and Time: Fri Jun  1 11:08:16 2018
+Date and Time: Sun Jun  3 20:21:52 2018
