@@ -18,13 +18,14 @@
 import string,sys,math,random,script_tree,os
 
 parameters = sys.argv[1:]
-if len(parameters) < 3:
-    print "usage: python simulyon_to_decostar.py simulyon_dir decostar_dir name"
+if len(parameters) < 4:
+    print "usage: python simulyon_to_decostar.py simulyon_dir decostar_dir name Transfer"
     exit()
 
 simulyon_dir = parameters[0]
 decostar_dir = parameters[1]
 expname = parameters[2]
+transfer = parameters[3]
 
 parameter_file = open(decostar_dir+"/parameters_"+expname+".txt","w")
 directory = decostar_dir+"/gene_trees_"+expname
@@ -103,7 +104,7 @@ parameter_file.write("output.prefix="+expname+"                \n")
 parameter_file.write("\n")
 parameter_file.write("verbose=1                             \n")
 parameter_file.write("\n")
-parameter_file.write("with.transfer=1                       \n")
+parameter_file.write("with.transfer="+transfer+"                       \n")
 parameter_file.write("dated.species.tree=0                  \n")
 parameter_file.write("ale=0                                 \n")
 parameter_file.write("already.reconciled=0                  \n")

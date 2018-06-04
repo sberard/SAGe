@@ -20,8 +20,8 @@ python make_scripts.py ../simulations/data_D10T0L20I10T10/ ../decostar_instances
 python make_scripts.py ../simulations/data_D10T10L20I10T10/ ../decostar_instances/gene_trees_transfers_iqtrees/ >run_iqtree_transfer.sh
 sh run_iqtree_notransfer.sh
 sh run_iqtree_transfer.sh
-python zombi_to_decostar.py ../simulations/data_D10T0L20I10T10/ ../decostar_instances/ notransfers_true_trees
-python zombi_to_decostar.py ../simulations/data_D10T10L20I10T10/ ../decostar_instances/ transfers_true_trees
+python zombi_to_decostar.py ../simulations/data_D10T0L20I10T10/ ../decostar_instances/ notransfers_true_trees 0
+python zombi_to_decostar.py ../simulations/data_D10T10L20I10T10/ ../decostar_instances/ transfers_true_trees 1
 
 cd $EXPE_DIR/decostar_instances
 ls gene_trees_notransfers_iqtrees/*treefile >list_gene_trees_notransfers_iqtrees 
