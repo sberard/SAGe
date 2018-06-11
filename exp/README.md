@@ -8,7 +8,7 @@ The subdirectory data/ of each of the two experiments contains three files
 - D10TYYL20I10T10-families_kept (processed families)
 - D10TYYL20I10T10-families_discarded (discarded families)
 
-MrBayes was ran using the script below, where XX is the family ID:
+MrBayes was ran using the script below, where XX is the family ID:<br/>
   begin mrbayes;<br/>
   set autoclose=yes nowarn=yes;<br/>
   execute XX_pruned.nex;<br/>
