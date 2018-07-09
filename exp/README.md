@@ -1,3 +1,5 @@
+
+1. ---------------------------------
 This directory contains the results of running MrBayes and ALE on the datasets D10T0L20I10T10 and D10T10L20I10T10.
 
 The results of ALE only are provided.
@@ -29,3 +31,6 @@ sampled trees for both runs.
 
 ALE was ran using a burnin of 5000 trees.
 The results for family XX are in the directory results/XX/.
+
+2. ----------------------------------
+The directory 2018_07_09_D10T0L20I10T10_NNI contains the result of applying NNIs to the true trees
