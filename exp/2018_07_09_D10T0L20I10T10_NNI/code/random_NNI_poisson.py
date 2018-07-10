@@ -13,11 +13,14 @@ while tree_file[i] == ">":
 tree = script_tree.readTree(tree_file[i])
 nodes = script_tree.getNodes(tree)
 
-number_of_NNI = numpy.random.poisson(float(parameters[1]))
+#print len(nodes)
 
-for i in range(number_of_NNI):
-    random_node = nodes[int(numpy.random.random(1)[0]*len(nodes))]
-    script_tree.NNI(tree,random_node)
+if len(nodes) > 3:
+    number_of_NNI = numpy.random.poisson(float(parameters[1]))
+
+    for i in range(number_of_NNI):
+        random_node = nodes[int(numpy.random.random(1)[0]*len(nodes))]
+        script_tree.NNI(tree,random_node)
 
 root = script_tree.getRoot(tree)
 print(script_tree.writeTree(tree,root,False))
