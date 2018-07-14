@@ -43,9 +43,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/91_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/91_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//91_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1072_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1072_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1072_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/518_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/518_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//518_pruned.fasta.treefile
@@ -115,6 +112,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/926_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/926_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//926_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1071_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1071_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1071_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/306_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/306_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//306_pruned.fasta.treefile
@@ -184,9 +184,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/874_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/874_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//874_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1003_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1003_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1003_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/65_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/65_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//65_pruned.fasta.treefile
@@ -235,9 +232,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/465_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/465_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//465_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1111_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1111_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1111_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/445_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/445_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//445_pruned.fasta.treefile
@@ -382,9 +376,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/950_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/950_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//950_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1094_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1094_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1094_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/471_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/471_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//471_pruned.fasta.treefile
@@ -427,9 +418,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/61_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/61_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//61_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1025_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1025_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1025_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/632_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/632_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//632_pruned.fasta.treefile
@@ -616,6 +604,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/477_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/477_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//477_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1091_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1091_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1091_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/339_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/339_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//339_pruned.fasta.treefile
@@ -688,9 +679,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/902_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/902_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//902_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1044_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1044_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1044_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/272_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/272_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//272_pruned.fasta.treefile
@@ -742,6 +730,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/562_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/562_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//562_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1061_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1061_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1061_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/174_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/174_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//174_pruned.fasta.treefile
@@ -817,9 +808,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/971_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/971_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//971_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1011_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1011_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1011_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/688_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/688_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//688_pruned.fasta.treefile
@@ -856,9 +844,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/236_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/236_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//236_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1002_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1002_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1002_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/304_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/304_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//304_pruned.fasta.treefile
@@ -907,12 +892,21 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/986_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/986_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//986_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1052_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1052_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1052_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1129_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1129_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1129_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/433_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/433_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//433_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/25_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/25_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//25_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1097_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1097_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1097_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/538_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/538_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//538_pruned.fasta.treefile
@@ -922,9 +916,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/245_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/245_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//245_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1075_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1075_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1075_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/592_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/592_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//592_pruned.fasta.treefile
@@ -1036,9 +1027,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/789_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/789_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//789_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1036_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1036_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1036_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/535_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/535_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//535_pruned.fasta.treefile
@@ -1066,12 +1054,18 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/706_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/706_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//706_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1001_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1001_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1001_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/672_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/672_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//672_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/249_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/249_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//249_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1055_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1055_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1055_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/972_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/972_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//972_pruned.fasta.treefile
@@ -1093,9 +1087,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/943_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/943_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//943_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1063_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1063_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1063_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1152_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1152_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1152_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/831_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/831_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//831_pruned.fasta.treefile
@@ -1153,6 +1147,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/461_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/461_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//461_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1147_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1147_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1147_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/187_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/187_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//187_pruned.fasta.treefile
@@ -1204,6 +1201,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/1085_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/1085_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1085_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1033_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1033_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1033_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/234_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/234_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//234_pruned.fasta.treefile
@@ -1249,6 +1249,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/746_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/746_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//746_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1032_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1032_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1032_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/121_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/121_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//121_pruned.fasta.treefile
@@ -1348,9 +1351,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/320_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/320_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//320_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1054_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1054_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1054_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/459_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/459_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//459_pruned.fasta.treefile
@@ -1414,18 +1414,12 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/276_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/276_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//276_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1020_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1020_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1020_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/754_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/754_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//754_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/867_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/867_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//867_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1053_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1053_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1053_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/922_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/922_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//922_pruned.fasta.treefile
@@ -1507,9 +1501,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/371_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/371_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//371_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1083_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1083_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1083_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/880_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/880_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//880_pruned.fasta.treefile
@@ -1525,6 +1516,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/543_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/543_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//543_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1048_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1048_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1048_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/9_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/9_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//9_pruned.fasta.treefile
@@ -1546,6 +1540,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/274_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/274_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//274_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1157_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1157_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1157_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/762_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/762_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//762_pruned.fasta.treefile
@@ -1627,9 +1624,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/81_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/81_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//81_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1115_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1115_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1115_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/282_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/282_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//282_pruned.fasta.treefile
@@ -1648,12 +1642,18 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/716_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/716_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//716_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/42_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/42_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//42_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1026_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1026_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1026_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/186_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/186_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//186_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1038_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1038_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1038_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1043_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1043_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1043_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/325_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/325_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//325_pruned.fasta.treefile
@@ -1786,6 +1786,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/185_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/185_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//185_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1122_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1122_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1122_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/598_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/598_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//598_pruned.fasta.treefile
@@ -1840,9 +1843,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/786_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/786_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//786_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1057_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1057_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1057_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/23_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/23_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//23_pruned.fasta.treefile
@@ -2038,6 +2038,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/580_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/580_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//580_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1045_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1045_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1045_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/35_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/35_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//35_pruned.fasta.treefile
@@ -2110,6 +2113,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/440_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/440_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//440_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1102_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1102_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1102_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/122_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/122_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//122_pruned.fasta.treefile
@@ -2287,6 +2293,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/996_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/996_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//996_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1126_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1126_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1126_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/713_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/713_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//713_pruned.fasta.treefile
@@ -2365,9 +2374,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/782_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/782_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//782_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1113_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1113_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1113_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/678_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/678_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//678_pruned.fasta.treefile
@@ -2389,12 +2395,15 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/814_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/814_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//814_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1067_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1067_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1067_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/414_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/414_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//414_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1006_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1006_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1006_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1079_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1079_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1079_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/479_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/479_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//479_pruned.fasta.treefile
@@ -2443,6 +2452,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/167_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/167_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//167_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1023_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1023_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1023_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/393_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/393_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//393_pruned.fasta.treefile
@@ -2497,9 +2509,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/51_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/51_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//51_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1051_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1051_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1051_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/394_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/394_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//394_pruned.fasta.treefile
@@ -2623,9 +2632,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/757_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/757_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//757_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1119_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1119_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1119_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/708_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/708_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//708_pruned.fasta.treefile
@@ -2638,6 +2644,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/82_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/82_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//82_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1109_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1109_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1109_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/434_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/434_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//434_pruned.fasta.treefile
@@ -2656,6 +2665,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/732_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/732_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//732_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1106_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1106_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1106_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/27_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/27_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//27_pruned.fasta.treefile
@@ -2803,6 +2815,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/540_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/540_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//540_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1030_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1030_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1030_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/888_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/888_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//888_pruned.fasta.treefile
@@ -2833,6 +2848,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/350_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/350_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//350_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1090_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1090_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1090_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/417_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/417_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//417_pruned.fasta.treefile
@@ -2926,12 +2944,12 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/832_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/832_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//832_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1034_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1034_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1034_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/621_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/621_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//621_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1116_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1116_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1116_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/33_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/33_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//33_pruned.fasta.treefile
@@ -2983,9 +3001,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/908_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/908_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//908_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1010_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1010_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1010_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/544_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/544_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//544_pruned.fasta.treefile
@@ -3001,6 +3016,9 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/363_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/363_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//363_pruned.fasta.treefile
+iqtree -s ../simulations/data_D10T0L20I10T10//S/1018_pruned.fasta -m GTR+G -alrt 1000 -redo
+mv ../simulations/data_D10T0L20I10T10//S/1018_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
+python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1018_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/242_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/242_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//242_pruned.fasta.treefile
@@ -3022,9 +3040,6 @@ python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//
 iqtree -s ../simulations/data_D10T0L20I10T10//S/932_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/932_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//932_pruned.fasta.treefile
-iqtree -s ../simulations/data_D10T0L20I10T10//S/1027_pruned.fasta -m GTR+G -alrt 1000 -redo
-mv ../simulations/data_D10T0L20I10T10//S/1027_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
-python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//1027_pruned.fasta.treefile
 iqtree -s ../simulations/data_D10T0L20I10T10//S/827_pruned.fasta -m GTR+G -alrt 1000 -redo
 mv ../simulations/data_D10T0L20I10T10//S/827_pruned.fasta.* ../decostar_instances/gene_trees_notransfers_iqtrees//
 python add_family_name.py ../decostar_instances/gene_trees_notransfers_iqtrees//827_pruned.fasta.treefile
