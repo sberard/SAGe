@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "#dataset rec_score DeCo_score linearity_score" > results/summary_1
+echo "#dataset nb_dup nb_loss rec_score nb_gain nb_break DeCo_score linearity_score" > results/summary_1
 python code/DeCoSTAR_scores.py results/DeCoSTAR/lambda_025/ lambda_025 >> results/summary_1
 python code/DeCoSTAR_scores.py results/DeCoSTAR/lambda_05/ lambda_05   >> results/summary_1
 python code/DeCoSTAR_scores.py results/DeCoSTAR/lambda_1/ lambda_1     >> results/summary_1

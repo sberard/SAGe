@@ -2,24 +2,32 @@ import sys,string,random,time
 
 def reconciliation_score(rec_file,dup_cost, loss_cost):
     rec_stream = open(rec_file,"r").readlines()
+    nb_dup=0
+    nb_loss=0
     score=0.0
     for l in rec_stream:
         if l[0]== "(":
-            nb_dup  = float(l.count('Dup'))
-            nb_loss = float(l.count('Loss'))
-            score += nb_dup*dup_cost+nb_loss*loss_cost
-    return(score)
+            nb_dup  += float(l.count('Dup'))
+            nb_loss += float(l.count('Loss'))
+    score += nb_dup*dup_cost+nb_loss*loss_cost
+    return((nb_dup,nb_loss,score))
 
 def DeCo_score(adjtree_file):
     adjtree_stream = open(adjtree_file,"r").readlines()
     score=0.0
+    nb_gain=0
+    nb_break=0
     for l in adjtree_stream:
         if l[0]== ">":
             l1=l.rstrip().replace(': ',':').split()
             for f in l1:
                 if f[0:5]=='Score':
                     score+=float(f.split(':')[1])
-    return(score)
+                elif f[0:5]=='#Gain':
+                    nb_gain+=int(f.split(':')[1])
+                elif f[0:5]=='#Brea':
+                    nb_break+=int(f.split(':')[1])                    
+    return((nb_gain,nb_break,score))
 
 def linearity_score(gene_file, adj_file):
     # Reading genes list
@@ -78,9 +86,9 @@ rec_file     = DIR+'/'+PREF+'.reconciliations.newick'
 adjtree_file = DIR+'/'+PREF+'.adjacencyTrees.newick'
 param_file   = DIR+'/'+PREF+'_DeCoSTAR_parameters'
 
-(dup_cost,loss_cost) = extract_rec_costs(param_file)
-rec_score       = reconciliation_score(rec_file,dup_cost, loss_cost)
-DeCo_score      = DeCo_score(adjtree_file)
+(dup_cost,loss_cost)          = extract_rec_costs(param_file)
+(nb_dup,nb_loss,rec_score)    = reconciliation_score(rec_file,dup_cost, loss_cost)
+(nb_gain,nb_break,DeCo_score) = DeCo_score(adjtree_file)
 linearity_score = linearity_score(gene_file, adj_file)
 
-print(PREF+'\t'+str(rec_score)+'\t'+str(DeCo_score)+'\t'+str(linearity_score))
+print(PREF+'\t'+str(nb_dup)+'\t'+str(nb_loss)+'\t'+str(rec_score)+'\t'+str(nb_gain)+'\t'+str(nb_break)+'\t'+str(DeCo_score)+'\t'+str(linearity_score))
