@@ -6,9 +6,11 @@ PREFIX=$3 # Output prefix
 
 PWD=`pwd`
 CODE=${PWD}/code
-RESULTS=${PWD}/results/DeCoSTAR/${OUTPUT}
+RESULTS=${OUTPUT}/${PREFIX}
 
 ls -d -1 ${DATA}/*nwk > ${PREFIX}_list
 
 sed 's/XXX/'$PREFIX'/g' DeCoSTAR_parameters > ${PREFIX}_DeCoSTAR_parameters
 ${CODE}/DeCoSTAR parameter.file=${PREFIX}_DeCoSTAR_parameters
+mv ${PREFIX}_DeCoSTAR_parameters ${RESULTS}/
+mv ${PREFIX}_list ${RESULTS}/
