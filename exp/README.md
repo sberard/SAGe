@@ -33,4 +33,13 @@ ALE was ran using a burnin of 5000 trees.
 The results for family XX are in the directory results/XX/.
 
 2. ----------------------------------
-The directory 2018_07_09_D10T0L20I10T10_NNI contains the result of applying NNIs to the true trees
+
+The directory 2018_07_15_D10T0L20I10T10_NNI contains the result of applying NNIs to the true trees.
+Various levels of noise were used to decide the number of NNIs to apply, parameterized by a parameter
+lambda, the mean of a Poisson distribution.
+
+Then for each level of noise, we ran DeCoSTAR (including the reconciliation) and recorded various
+statistics on the results, present in the directory results/summary_1
+
+The same was done for the trees simulated with transfers:
+2018_07_16_D10T10L20I10T10_NNI
