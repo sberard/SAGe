@@ -12,4 +12,4 @@ python code/DeCoSTAR_scores.py results/DeCoSTAR/lambda_7/ lambda_7   data/list_g
 python code/DeCoSTAR_scores.py results/DeCoSTAR/lambda_10/ lambda_10 data/list_gene_trees data/gene_trees results/NNI/lambda_10 >> results/summary_1
 python code/DeCoSTAR_scores.py results/DeCoSTAR/lambda_20/ lambda_20 data/list_gene_trees data/gene_trees results/NNI/lambda_20 >> results/summary_1
 python code/DeCoSTAR_scores.py results/DeCoSTAR/lambda_30/ lambda_30 data/list_gene_trees data/gene_trees results/NNI/lambda_30 >> results/summary_1
-#python code/DeCoSTAR_scores.py results/DeCoSTAR/lambda_50/ lambda_50 data/list_gene_trees data/gene_trees results/NNI/lambda_50 >> results/summary_1
+python code/DeCoSTAR_scores.py results/DeCoSTAR/lambda_50/ lambda_50 data/list_gene_trees data/gene_trees results/NNI/lambda_50 >> results/summary_1
