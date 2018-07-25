@@ -4,8 +4,10 @@ EXPE_DIR=/home/tannier/2018_chapitre_scornavacca_galtier/SAGe/
 cd $ZOMBI_DIR
 rm -rf $EXPE_DIR/simulations/data_D10T0L20I10T10/G/*
 rm -rf $EXPE_DIR/simulations/data_D10T10L20I10T10/G/*
+rm -rf $EXPE_DIR/simulations/data_D0T10L20I10T10/G/*
 python3 Zombi.py G $EXPE_DIR/simulations/parameters/GenomeParameters.tsv $EXPE_DIR/simulations/data_D10T10L20I10T10
 python3 Zombi.py G $EXPE_DIR/simulations/parameters/GenomeParameters_without_transfer.tsv $EXPE_DIR/simulations/data_D10T0L20I10T10
+python3 Zombi.py G $EXPE_DIR/simulations/parameters/GenomeParameters_without_duplication.tsv $EXPE_DIR/simulations/data_D0T10L20I10T10
 rm -rf $EXPE_DIR/simulations/data_D10T0L20I10T10/S/*
 rm -rf $EXPE_DIR/simulations/data_D10T10L20I10T10/S/*
 python3 Zombi.py S $EXPE_DIR/simulations/parameters/SequenceParameters.tsv $EXPE_DIR/simulations/data_D10T10L20I10T10

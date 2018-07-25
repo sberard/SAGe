@@ -18,6 +18,9 @@ for line in file_genes:
             genes[species] = {}
         genes[species][ident] = []
 
+print genes.keys()
+for s in genes.keys():
+    print len(genes[s])
 
 file_adjacencies = open(P+".adjacencies.txt","r").readlines()
 for line in file_adjacencies:
@@ -31,6 +34,7 @@ for line in file_adjacencies:
 score = 0.0
 for spe in genes.keys():
     for k in genes[spe].keys():
+        print spe,len(genes[spe][k])
         score = score + abs(len(genes[spe][k]) - 2)
 
 print score
