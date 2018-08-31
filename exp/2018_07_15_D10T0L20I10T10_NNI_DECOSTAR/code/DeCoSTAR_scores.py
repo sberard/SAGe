@@ -1,16 +1,29 @@
-import sys,string,random,time
+import sys,string,random,time,script_tree,numpy
 
-def reconciliation_score(rec_file,dup_cost, loss_cost):
+def RF(gene_trees_list,gene_trees_dir1,gene_trees_dir2):# gene_trees_dir1 = true trees, gene_trees_dir2=NNI trees
+    ref=open(gene_trees_list,"r").readlines()
+    RF=[]
+    for line in ref:
+        tree_ref = script_tree.readTree(open(gene_trees_dir1+"/"+line.strip(),"r").readline())
+        root = script_tree.getRoot(tree_ref)
+        tree_comp = script_tree.readTree(open(gene_trees_dir2+"/"+line.strip()).readline())
+        RF.append(script_tree.RF(tree_ref,tree_comp))
+    return('%.2f' % numpy.mean(RF))
+
+
+def reconciliation_score(rec_file,dup_cost, loss_cost, hgt_cost):
     rec_stream = open(rec_file,"r").readlines()
     nb_dup=0
     nb_loss=0
+    nb_hgt=0
     score=0.0
     for l in rec_stream:
         if l[0]== "(":
             nb_dup  += float(l.count('Dup'))
             nb_loss += float(l.count('Loss'))
-    score += nb_dup*dup_cost+nb_loss*loss_cost
-    return((nb_dup,nb_loss,score))
+            nb_hgt  += float(l.count('Reception'))
+    score += nb_dup*dup_cost+nb_loss*loss_cost+nb_hgt*hgt_cost
+    return((nb_dup,nb_loss,nb_hgt,score))
 
 def DeCo_score(adjtree_file):
     adjtree_stream = open(adjtree_file,"r").readlines()
@@ -67,18 +80,23 @@ def extract_rec_costs(param_file):
                 dup_cost = float(l1[1])
             elif l1[0]=='loss.cost':
                 loss_cost = float(l1[1])
-    return((dup_cost,loss_cost))
+            elif l1[0]=='HGT.cost':
+                hgt_cost = float(l1[1])
+    return((dup_cost,loss_cost,hgt_cost))
 
 ## Main
 
 parameters = sys.argv[1:]
 
-if len(parameters) != 2:
-    print('usage: python linearity_score.py DIRECTORY PREFIX')
+if len(parameters) != 5:
+    print('usage: python linearity_score.py DIRECTORY PREFIX TREES_LIST TRUE_TREES_DIR NNI_TREES_DIR')
     exit()
     
 DIR  = parameters[0]
 PREF = parameters[1]
+LIST_TRUE = parameters[2]
+DIR_TRUE  = parameters[3]
+DIR_NNI   = parameters[4]
 
 gene_file    = DIR+'/'+PREF+'.genes.txt'
 adj_file     = DIR+'/'+PREF+'.adjacencies.txt'
@@ -86,9 +104,10 @@ rec_file     = DIR+'/'+PREF+'.reconciliations.newick'
 adjtree_file = DIR+'/'+PREF+'.adjacencyTrees.newick'
 param_file   = DIR+'/'+PREF+'_DeCoSTAR_parameters'
 
-(dup_cost,loss_cost)          = extract_rec_costs(param_file)
-(nb_dup,nb_loss,rec_score)    = reconciliation_score(rec_file,dup_cost, loss_cost)
-(nb_gain,nb_break,DeCo_score) = DeCo_score(adjtree_file)
+rf                                = RF(LIST_TRUE,DIR_TRUE,DIR_NNI)
+(dup_cost,loss_cost,hgt_cost)     = extract_rec_costs(param_file)
+(nb_dup,nb_loss,nb_hgt,rec_score) = reconciliation_score(rec_file,dup_cost,loss_cost,hgt_cost)
+(nb_gain,nb_break,DeCo_score)     = DeCo_score(adjtree_file)
 linearity_score = linearity_score(gene_file, adj_file)
 
-print(PREF+'\t'+str(nb_dup)+'\t'+str(nb_loss)+'\t'+str(rec_score)+'\t'+str(nb_gain)+'\t'+str(nb_break)+'\t'+str(DeCo_score)+'\t'+str(linearity_score))
+print(PREF+'\t'+str(rf)+'\t'+str(nb_dup)+'\t'+str(nb_loss)+'\t'+str(nb_hgt)+'\t'+str(rec_score)+'\t'+str(nb_gain)+'\t'+str(nb_break)+'\t'+str(DeCo_score)+'\t'+str(linearity_score))
