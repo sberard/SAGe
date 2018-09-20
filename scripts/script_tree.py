@@ -480,10 +480,11 @@ def ultrametricize(tree):
 	index = -1
 	for l in leaves:
 		d = distanceFrom(tree,root,l)
+		#print getName(tree,l),d
 		if d > maximum:
 			maximum = d
 			index = l
-	#~ print getName(tree,l),"maximum",maximum
+	#print getName(tree,l),"maximum",maximum
 	i = index
 	marque = []
 	while i != root:
@@ -501,11 +502,14 @@ def ultrametricize(tree):
 				index = l
 			#~ print getName(tree,l),"distance",distanceFrom(tree,root,l)
 		i = index
+		#print i,maximum_non_marque,getName(tree,i),
 		distance_from_marque = 0
 		while not i in marque:
 			distance_from_marque = distance_from_marque + getLength(tree,i)
 			i = getParent(tree,i)
-		ratio = (maximum - distanceFrom(tree,i,root)) / distance_from_marque
+                #print maximum,distance_from_marque,distanceFrom(tree,i,root),
+		ratio = float(maximum - distanceFrom(tree,i,root)) / distance_from_marque
+		#print ratio
 		i = index
 		while not i in marque:
 			marque.append(i)

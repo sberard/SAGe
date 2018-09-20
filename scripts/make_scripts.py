@@ -21,8 +21,8 @@ for alignment_file in alignment_files:
         print "python add_family_name_alignments.py "+simulation_dir+"/S/"+alignment_file
         if transfer == "0":
             print "raxmlHPC-SSE3 -m  GTRGAMMA -n "+alignment_file+" -s "+simulation_dir+"/S/"+alignment_file+"_modified -p 5 -f a -x 5 -N autoFC -w "+output_dir
-        else:
-            print "pb -d "+simulation_dir+"/S/"+alignment_file+"_modified.phylip -dgam 4 -gtr -x 10 2000 "+alignment_file.split("/")[-1].split(".")[0]
-            print "cp "+alignment_file.split("/")[-1].split(".")[0]+"* "+output_dir
+        #else:
+            #print "pb -d "+simulation_dir+"/S/"+alignment_file+"_modified.phylip -dgam 4 -gtr -x 10 2000 "+alignment_file.split("/")[-1].split(".")[0]
+            #print "cp "+alignment_file.split("/")[-1].split(".")[0]+"* "+output_dir
     
     

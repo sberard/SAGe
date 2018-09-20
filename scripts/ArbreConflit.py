@@ -54,9 +54,7 @@ for n in all_species.keys():
     conflict = 0
     for g in all_species[n].keys():
         conflict = conflict + abs(len(all_species[n][g])-2)
-    list_elements.append([n,conflict])
-
-
+    list_elements.append([n,int(float(conflict)/len(all_species[n].keys())*1000)])
 
 
 
@@ -76,7 +74,7 @@ def echelle(color_begin, color_end, n_vals):
     return degrade
 
 #Pour parser le fichier passé en paramètre
-def parse_conflit():
+def parse_conflit(line_tree,list_elements):
     dict_conflits=dict()
     #file=open(file,"r")
     #Première ligne c'est l'arbre
@@ -106,7 +104,7 @@ def layout(node):
 #filename=argv[1]
 
 #Création de l'arbre et du dictionnaire
-t,dict_conflits,MAX=parse_conflit()
+t,dict_conflits,MAX=parse_conflit(line_tree,list_elements)
 #print "MAX=",MAX
 
 #Gestion du degradé de couleur AU LIEU DE MX ON PEUT UTILISER LE MÊME NB POUR TTES LES EXPÉ
