@@ -1,6 +1,8 @@
+# directory variables
 ZOMBI_DIR=/home/tannier/programs/Zombi/SimuLyon/
 EXPE_DIR=/home/tannier/2018_chapitre_scornavacca_galtier/SAGe/
 
+# perform simulations, genomes + sequences
 cd $ZOMBI_DIR
 rm -rf $EXPE_DIR/simulations/data_D10T0L20I10T10/G/*
 rm -rf $EXPE_DIR/simulations/data_D10T10L20I10T10/G/*
@@ -10,40 +12,50 @@ python3 Zombi.py G $EXPE_DIR/simulations/parameters/GenomeParameters_without_tra
 python3 Zombi.py G $EXPE_DIR/simulations/parameters/GenomeParameters_without_duplication.tsv $EXPE_DIR/simulations/data_D0T10L20I10T10
 rm -rf $EXPE_DIR/simulations/data_D10T0L20I10T10/S/*
 rm -rf $EXPE_DIR/simulations/data_D10T10L20I10T10/S/*
+rm -rf $EXPE_DIR/simulations/data_D0T10L20I10T10/S/*
 python3 Zombi.py S $EXPE_DIR/simulations/parameters/SequenceParameters.tsv $EXPE_DIR/simulations/data_D10T10L20I10T10
 python3 Zombi.py S $EXPE_DIR/simulations/parameters/SequenceParameters.tsv $EXPE_DIR/simulations/data_D10T0L20I10T10
+python3 Zombi.py S $EXPE_DIR/simulations/parameters/SequenceParameters.tsv $EXPE_DIR/simulations/data_D0T0L20I10T10
 
+# clean experiments
 cd $EXPE_DIR/scripts
-rm -rf ../decostar_instances/gene_trees_notransfers_iqtrees/*
-rm -rf ../decostar_instances/gene_trees_transfers_iqtrees/*
+rm -rf ../decostar_instances/gene_trees_notransfers_raxml_trees/*
+rm -rf ../decostar_instances/gene_trees_notransfers_treerecs_trees/*
+rm -rf ../decostar_instances/gene_trees_transfers_phylobayes_trees/*
+rm -rf ../decostar_instances/gene_trees_transfers_eccetera_trees/*
 rm -rf ../decostar_instances/gene_trees_notransfers_true_trees/*
 rm -rf ../decostar_instances/gene_trees_transfers_true_trees/*
-python make_scripts.py ../simulations/data_D10T0L20I10T10/ ../decostar_instances/gene_trees_notransfers_iqtrees/ >run_iqtree_notransfer.sh
-python make_scripts.py ../simulations/data_D10T10L20I10T10/ ../decostar_instances/gene_trees_transfers_iqtrees/ >run_iqtree_transfer.sh
-sh run_iqtree_notransfer.sh
-sh run_iqtree_transfer.sh
-python zombi_to_decostar.py ../simulations/data_D10T0L20I10T10/ ../decostar_instances/ notransfers_true_trees 0
-python zombi_to_decostar.py ../simulations/data_D10T10L20I10T10/ ../decostar_instances/ transfers_true_trees 1
+rm -rf ../decostar_instances/gene_trees_nodup_true_trees/*
 
-cd $EXPE_DIR/decostar_instances
-ls gene_trees_notransfers_iqtrees/*treefile >list_gene_trees_notransfers_iqtrees 
-ls gene_trees_transfers_iqtrees/*treefile >list_gene_trees_transfers_iqtrees 
-DeCoSTAR parameter.file=parameters_notransfers_true_trees.txt
-DeCoSTAR parameter.file=parameters_notransfers_iqtrees.txt
-DeCoSTAR parameter.file=parameters_transfers_true_trees.txt
-DeCoSTAR parameter.file=parameters_transfers_iqtrees.txt
+# prepare the execution of tree reconstruction and execute
+python make_scripts.py $EXPE_DIR/simulations/data_D10T0L20I10T10/ $EXPE_DIR/decostar_instances/gene_trees_notransfers_raxml_trees/ 0 >run_raxmltree_notransfer.sh
+python make_scripts.py $EXPE_DIR/simulations/data_D10T10L20I10T10/ $EXPE_DIR/decostar_instances/gene_trees_transfers_phylobayes_trees/ 1 >run_phylobayestree_transfer.sh
+sh run_raxmltree_notransfer.sh
+sh run_phylobayestree_transfer.sh
 
-
+# reconcile gene trees
 cd $EXPE_DIR/decostar_instances/gene_trees_notransfers_treerecs
 rm -rf gene_tree*
 cat ../gene_trees_notransfers_iqtrees/*treefile >iqtrees
 Treerecs -s ../species_tree -g iqtrees -t 99 -r
 python iqtrees_rec_split.py
 
+# make instances for decostar
+python zombi_to_decostar.py ../simulations/data_D10T0L20I10T10/ ../decostar_instances/ notransfers_true_trees 0
+python zombi_to_decostar.py ../simulations/data_D10T10L20I10T10/ ../decostar_instances/ transfers_true_trees 1
+
+# run decostar
 cd $EXPE_DIR/decostar_instances
+ls gene_trees_notransfers_iqtrees/*treefile >list_gene_trees_notransfers_iqtrees 
+ls gene_trees_transfers_iqtrees/*treefile >list_gene_trees_transfers_iqtrees 
 ls gene_trees_notransfers_treerecs/gene_tree_* >list_gene_trees_notransfers_treerecs 
+DeCoSTAR parameter.file=parameters_notransfers_true_trees.txt
+DeCoSTAR parameter.file=parameters_notransfers_iqtrees.txt
+DeCoSTAR parameter.file=parameters_transfers_true_trees.txt
+DeCoSTAR parameter.file=parameters_transfers_iqtrees.txt
 DeCoSTAR parameter.file=parameters_notransfers_treerecs.txt 
 
+# make figures for the comparisons of the results
 cd $EXPE_DIR/scripts
 python compare_gene_tree_sets.py ../decostar_instances/results/notransfers_true_trees ../decostar_instances/results/notransfers_iqtrees ../decostar_instances/results/notransfers_treerecs
 R --vanilla <plot.R 
