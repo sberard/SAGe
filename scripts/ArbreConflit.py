@@ -6,7 +6,7 @@ from sys import argv
 from ete3 import Tree, faces, TreeStyle, NodeStyle
 import script_tree
 
-PREFIX = sys.argv[1]
+PREFIX = argv[1]
 
 species_tree = script_tree.readTree(open(PREFIX+".speciesTree.newick","r").readline())
 genes = open(PREFIX+".genes.txt","r").readlines()
@@ -142,4 +142,4 @@ ts.show_branch_length = False
 ts.show_branch_support = False
 
 #Écriture de l'arbre dans un fichier
-t.render(filename+".png", w=183, units="mm", tree_style=ts)
+t.render(PREFIX+".png", w=183, units="mm", tree_style=ts)
