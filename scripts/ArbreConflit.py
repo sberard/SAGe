@@ -3,7 +3,7 @@
 
 from __future__ import division
 from sys import argv
-from ete3 import Tree, faces, TreeStyle, NodeStyle
+from ete3 import Tree, faces, TreeStyle, NodeStyle, CircleFace
 import script_tree
 
 PREFIX = argv[1]
@@ -96,9 +96,16 @@ def parse_conflit(line_tree,list_elements):
 
 #Définition de l'affichage des noeuds
 def layout(node):
-    N = faces.TextFace(node.cname, fsize=8, fgcolor="black")
-    faces.add_face_to_node(N, node, 0, position="branch-top")
-
+    # N = faces.TextFace(node.cname, fsize=8, fgcolor="black")
+    # faces.add_face_to_node(N, node, 0, position="branch-top")
+    if int(node.cname)>0:
+        # Creates a sphere face whose size is proportional to node's
+        # feature "weight"
+        C = CircleFace(radius=int(node.cname)/5, color="RoyalBlue", style="sphere")
+        # Let's make the sphere transparent
+        C.opacity = 0.3
+        # And place as a float face over the tree
+        faces.add_face_to_node(C, node, 0, position="float")
 
 #Lecture du nom de fichier passé en paramètre
 #filename=argv[1]
@@ -116,20 +123,29 @@ deg=echelle(vert, rouge, int(MAX)+1)
 #Crée un champs 'cname' à chaque noeud de l'arbre qui récupère le nb de conflit 
 for n in t.traverse():
     style = NodeStyle()
+    b=False
     if n.is_leaf():
         s=dict_conflits.get(n.name)
     else:
         i = int(n.support)
         s=dict_conflits.get(str(i))
+        if (n.children[0].name=="n200" or n.children[1].name=="n200"):
+            b=True
+            print "Trouvé \n"
     n.add_features(cname=s)
+    n.add_features(color=b)
     style["vt_line_type"] = 0 # 0 solid, 1 dashed, 2 dotted
-    style["hz_line_width"] = 3
+    style["hz_line_width"] = 2
     style["hz_line_type"] = 0
-    style["hz_line_color"] = '#%02x%02x%02x' % deg[int(s)]
+    if b:
+        style["hz_line_color"] = '#%02x%02x%02x' % rouge
+    else:
+        style["hz_line_color"] = '#%02x%02x%02x' % vert
+    #style["hz_line_color"] = '#%02x%02x%02x' % deg[int(s)]
     #Pour l'affichage du point dont le diamètre dépend du nb d'erreur
-    if int(s)>0:
-        style["fgcolor"] = "red"
-        style["size"] = 15*int(s)/MAX
+    # if int(s)>0:
+    #     style["fgcolor"] = "red"
+    #     style["size"] = 15*int(s)/MAX
     n.img_style=style
     
 #Définition du style l'arbre
