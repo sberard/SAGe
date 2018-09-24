@@ -129,11 +129,13 @@ for n in t.traverse():
     else:
         i = int(n.support)
         s=dict_conflits.get(str(i))
-        if (n.children[0].name=="n200" or n.children[1].name=="n200"):
+        if (n.children[0].name=="n236" or n.children[1].name=="n236"):
             b=True
             print "Trouvé \n"
     n.add_features(cname=s)
     n.add_features(color=b)
+    #Pour que le noeud ne soit pas matérialisé
+    style["size"] = 0
     style["vt_line_type"] = 0 # 0 solid, 1 dashed, 2 dotted
     style["hz_line_width"] = 2
     style["hz_line_type"] = 0
