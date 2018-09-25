@@ -7,6 +7,10 @@ from ete3 import Tree, faces, TreeStyle, NodeStyle, CircleFace
 import script_tree
 
 PREFIX = argv[1]
+if len(argv)==3:
+    OUT_PREFIX=argv[2]
+else:
+    OUT_PREFIX=PREFIX
 
 species_tree = script_tree.readTree(open(PREFIX+".speciesTree.newick","r").readline())
 genes = open(PREFIX+".genes.txt","r").readlines()
@@ -71,7 +75,7 @@ def echelle(color_begin, color_end, n_vals):
         g = int(g1 * alpha + g2 * beta)
         b = int(b1 * alpha + b2 * beta)
         degrade.append((r, g, b))
-    return degrade
+    return(degrade)
 
 #Pour parser le fichier passé en paramètre
 def parse_conflit(line_tree,list_elements):
@@ -92,7 +96,7 @@ def parse_conflit(line_tree,list_elements):
         dict_conflits[cle] = data
     #print dict_conflits
     #file.close()
-    return t,dict_conflits,MAX
+    return((t,dict_conflits,MAX))
 
 #Définition de l'affichage des noeuds
 def layout(node):
@@ -131,7 +135,7 @@ for n in t.traverse():
         s=dict_conflits.get(str(i))
         if (n.children[0].name=="n236" or n.children[1].name=="n236"):
             b=True
-            print "Trouvé \n"
+            #print("Trouvé \n")
     n.add_features(cname=s)
     n.add_features(color=b)
     #Pour que le noeud ne soit pas matérialisé
@@ -158,4 +162,4 @@ ts.show_branch_length = False
 ts.show_branch_support = False
 
 #Écriture de l'arbre dans un fichier
-t.render(PREFIX+".png", w=183, units="mm", tree_style=ts)
+t.render(OUT_PREFIX+".png", w=183, units="mm", tree_style=ts)
