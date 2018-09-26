@@ -79,7 +79,8 @@ def CreateConflictGraphics(PREFIX, OUT_PREFIX):
             species = words[1].split("@")[0]
         else:
             species = words[0]
-        all_species[species][words[1]] = []
+        if all_species.has_key(species):
+            all_species[species][words[1]] = []
 
     for line in adjacencies:
         words = line.split()
@@ -89,8 +90,9 @@ def CreateConflictGraphics(PREFIX, OUT_PREFIX):
             species = words[0]
         else:
             species = words[1].split("@")[0]
-        all_species[species][gene1].append(gene2)
-        all_species[species][gene2].append(gene1)
+        if all_species.has_key(species):
+            all_species[species][gene1].append(gene2)
+            all_species[species][gene2].append(gene1)
 
     list_elements = []
     for n in all_species.keys():
