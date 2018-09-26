@@ -37,7 +37,8 @@ for line in genes:
         species = words[1].split("@")[0]
     else:
         species = words[0]
-    all_species[species][words[1]] = []
+    if all_species.has_key(species):
+        all_species[species][words[1]] = []
 
 #for n in all_species.keys():
     #print n,len(all_species[n].keys())
@@ -50,8 +51,9 @@ for line in adjacencies:
         species = words[0]
     else:
         species = words[1].split("@")[0]
-    all_species[species][gene1].append(gene2)
-    all_species[species][gene2].append(gene1)
+    if all_species.has_key(species):
+        all_species[species][gene1].append(gene2)
+        all_species[species][gene2].append(gene1)
 
 list_elements = []
 for n in all_species.keys():
