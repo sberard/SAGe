@@ -26,14 +26,18 @@ ekeys = extant_genes.keys()
 
 output = open("comparison_contents.txt","w")
 for i in range(len(ekeys)):
+    print ekeys[i],extant_genes[ekeys[i]],
     output.write(str(extant_genes[ekeys[i]])+" ")
     for P in PREFIX:
         keys = ancestral[P].keys()
         if i<len(keys):
             output.write(str(ancestral[P][keys[i]])+" ")
+            print keys[i],ancestral[P][keys[i]],
         else:
             output.write("NA ")
+            print "NA",
     output.write("\n")
+    print
 
     
 output = open("comparison_degrees.txt","w")
